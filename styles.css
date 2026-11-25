@@ -622,7 +622,7 @@ a {
   justify-content: center;
   background-color: var(--ink);
   color: var(--bg);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-btn);
   border: 1px solid rgba(255, 255, 255, 0.18);
   opacity: 0.92;
   transform: scale(0.95);
@@ -685,90 +685,45 @@ a {
 }
 
 /* ==========================================================================
-   About Section
+   About Section (Compact & Minimal)
    ========================================================================== */
 
 .about-section {
   border-top: 1px solid var(--border);
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 64px;
-  align-items: start;
+.about-compact {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.about-lead .section-title {
-  margin-bottom: 24px;
+.about-compact .section-title {
+  margin-bottom: 20px;
 }
 
-.about-bio {
-  margin: 0 0 18px;
+.about-compact .about-bio {
+  margin: 0 0 32px;
   font-size: 16px;
   line-height: 1.7;
   color: var(--ink-secondary);
 }
 
-.about-bio:last-child {
-  margin-bottom: 0;
-}
-
-.about-details {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-}
-
-.detail-heading {
-  margin: 0 0 16px;
-  font-size: 13px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--ink);
-}
-
-.detail-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--border);
-}
-
-.detail-list li {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 15px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.detail-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--ink);
-}
-
-.detail-note {
-  font-size: 13px;
-  color: var(--ink-muted);
-}
-
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .tool-item {
-  padding: 12px 14px;
+  padding: 14px 16px;
   font-size: 13px;
   font-weight: 600;
+  text-align: center;
   color: var(--ink);
   background-color: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-btn);
 }
 
 /* ==========================================================================
@@ -1005,13 +960,13 @@ a {
 }
 
 .modal-close-btn {
-  padding: 8px 12px;
+  padding: 8px 14px;
   font-size: 12px;
   font-weight: 600;
   color: var(--bg);
   background-color: var(--ink);
   border: 1px solid var(--ink);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-btn);
   cursor: pointer;
 }
 

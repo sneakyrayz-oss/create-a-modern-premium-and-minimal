@@ -1,179 +1,172 @@
 /**
- * RAYZ — Gaming Video Editor Portfolio
- * 9:16 Vertical Video Previews, Velocity & Flow Montages
- * Direct Discord Contact: rayz_69
+ * RAYZ — Long-Form Gaming Video Editor & Mobile Editor
+ * 9:16 Video Previews | 16:9 Master Aspect Ratio
+ * Turnaround: 70–80 hours | Direct Discord: rayz_69
  */
 
 const PROJECTS = [
   {
     id: "showreel-gaming",
-    title: "2026 Gaming Montage & Velocity Reel",
-    category: "Featured Reel",
-    duration: "01:12",
-    durationSeconds: 72,
-    role: "Mobile Editor · After Motion Z · Gold Motion",
+    title: "Long-Form Gaming Video Showcase",
+    category: "Featured Showcase",
+    duration: "18:24",
+    durationSeconds: 1104,
+    role: "Mobile Editor · Long-Form 16:9 Editor",
     summary:
-      "Curated montage of high-speed gaming velocity cuts, frame-locked beat syncs, clean gun audio transients, and 9:16 vertical mobile edits.",
+      "Curated showcase of retention-paced 16:9 long-form gaming video editing, narrative progression, dialogue sculpting, and clean sound mixing.",
     thumbnail: "assets/showreel-hero.jpg",
     videoUrl: "",
-    specs: ["9:16 & 4K", "60 FPS", "Velocity Sync", "After Motion Z"],
+    specs: ["16:9 4K", "60 FPS", "Long-Form Pacing", "Mobile Editor"],
     cuts: [
-      { time: 0.0, label: "01 — Opening Velocity Hook", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.1], panY: [0, -15] },
-      { time: 0.22, label: "02 — Sniper Headshot Impact", image: "assets/project-documentary.jpg", zoom: [1.05, 1.18], panY: [-10, 10] },
-      { time: 0.45, label: "03 — Katana Neon Slash", image: "assets/project-music.jpg", zoom: [1.0, 1.12], panY: [10, -10] },
-      { time: 0.68, label: "04 — Clutch Defuse Beat Drop", image: "assets/project-commercial.jpg", zoom: [1.08, 1.15], panY: [0, 12] },
-      { time: 0.88, label: "05 — Champion Victory Finale", image: "assets/project-brand.jpg", zoom: [1.02, 1.09], panY: [-10, 5] },
+      { time: 0.0, label: "01 — Episode Narrative Intro", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.08], panY: [0, -12] },
+      { time: 0.22, label: "02 — Critical Story Encounter", image: "assets/project-documentary.jpg", zoom: [1.04, 1.12], panY: [-8, 8] },
+      { time: 0.45, label: "03 — Boss Battle Sequence", image: "assets/project-music.jpg", zoom: [1.0, 1.1], panY: [8, -8] },
+      { time: 0.68, label: "04 — Tactical Mission Climax", image: "assets/project-commercial.jpg", zoom: [1.06, 1.14], panY: [0, 10] },
+      { time: 0.88, label: "05 — Chapter Outro & Cliffhanger", image: "assets/project-brand.jpg", zoom: [1.02, 1.08], panY: [-8, 4] },
     ],
     featuredOnly: true,
   },
   {
-    id: "overdrive-velocity",
-    title: "Overdrive Velocity",
-    category: "Velocity Sync",
-    duration: "00:32",
-    durationSeconds: 32,
-    role: "After Motion Z · Flow Ramp",
-    summary:
-      "Hyper-fluid speed ramp montage cut to heavy 808 bass kicks, seamless screen rotation wipes, and impact color flashes.",
+    id: "storyline-walkthrough",
+    title: "Storyline Walkthrough — Episode 01",
+    category: "Long-Form Gaming",
+    duration: "34:20",
+    durationSeconds: 2060,
+    role: "Long-Form 16:9 Edit · Narrative Flow",
+    summary: "Full-length episodic gaming video paced for audience retention and continuous story progression.",
     thumbnail: "assets/showreel-hero.jpg",
     videoUrl: "",
-    specs: ["9:16 Vertical", "60 FPS", "After Motion Z", "Bass Drop Sync"],
+    specs: ["16:9 Master", "60 FPS", "Mobile Editor", "Story Flow"],
     cuts: [
-      { time: 0.0, label: "Speed Ramp Entry", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.14], panY: [0, -20] },
-      { time: 0.4, label: "Transient Peak", image: "assets/project-music.jpg", zoom: [1.12, 1.05], panY: [15, -5] },
-      { time: 0.75, label: "Clean Exit Blur", image: "assets/project-brand.jpg", zoom: [1.02, 1.1], panY: [-5, 15] },
+      { time: 0.0, label: "Chapter Intro", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.1], panY: [0, -16] },
+      { time: 0.42, label: "Mid-Mission Fight", image: "assets/project-music.jpg", zoom: [1.1, 1.04], panY: [12, -4] },
+      { time: 0.78, label: "Episode Cliffhanger", image: "assets/project-brand.jpg", zoom: [1.02, 1.08], panY: [-4, 12] },
     ],
   },
   {
-    id: "shadow-clutch",
-    title: "Shadow Clutch 1v4",
-    category: "Tactical FPS",
-    duration: "00:28",
-    durationSeconds: 28,
-    role: "Gaming Editor · Kill Sync",
-    summary:
-      "Frame-accurate match cuts synchronized to weapon triggers, clean kill banners, and sharp directional audio foley.",
-    thumbnail: "assets/project-commercial.jpg",
-    videoUrl: "",
-    specs: ["9:16 1080p", "60 FPS", "Gaming Editor", "Gun Foley"],
-    cuts: [
-      { time: 0.0, label: "Corridor Peeking", image: "assets/project-commercial.jpg", zoom: [1.0, 1.08], panY: [-10, 10] },
-      { time: 0.45, label: "Flick Shot Impact", image: "assets/project-documentary.jpg", zoom: [1.16, 1.06], panY: [10, -10] },
-      { time: 0.78, label: "Defuse Timer Tick", image: "assets/project-creator.jpg", zoom: [1.04, 1.12], panY: [0, 10] },
-    ],
-  },
-  {
-    id: "sniper-pulse",
-    title: "Sniper Pulse Flow",
-    category: "Montage Edit",
-    duration: "00:45",
-    durationSeconds: 45,
-    role: "Mobile Editor · Pacing",
-    summary:
-      "Quickscope headshot flow with tactile screen recoil shakes, rhythmic velocity slowdowns, and subtle violet edge rim lighting.",
+    id: "hardcore-survival",
+    title: "100 Days Hardcore Survival",
+    category: "Long-Form Gaming",
+    duration: "58:30",
+    durationSeconds: 3510,
+    role: "Gaming Editor · Progression Pacing",
+    summary: "High-retention episodic survival cut with structured day markers, ambient sound design, and clean time transitions.",
     thumbnail: "assets/project-documentary.jpg",
     videoUrl: "",
-    specs: ["9:16 Vertical", "60 FPS", "Mobile Editor", "Recoil Sync"],
+    specs: ["16:9 4K", "60 FPS", "Gaming Editor", "Retention Structure"],
     cuts: [
-      { time: 0.0, label: "Breath Hold", image: "assets/project-documentary.jpg", zoom: [1.0, 1.06], panY: [-8, 12] },
-      { time: 0.35, label: "Scope Alignment", image: "assets/showreel-hero.jpg", zoom: [1.15, 1.05], panY: [12, -8] },
-      { time: 0.72, label: "Triple Collateral", image: "assets/project-music.jpg", zoom: [1.05, 1.18], panY: [0, 14] },
+      { time: 0.0, label: "Base Construction", image: "assets/project-documentary.jpg", zoom: [1.0, 1.06], panY: [-6, 8] },
+      { time: 0.45, label: "Night Threat Wave", image: "assets/showreel-hero.jpg", zoom: [1.12, 1.05], panY: [8, -6] },
+      { time: 0.8, label: "Day 100 Finale", image: "assets/project-music-stage.jpg", zoom: [1.04, 1.12], panY: [0, 8] },
     ],
   },
   {
-    id: "neon-strike",
-    title: "Neon Katana Strike",
-    category: "Anime Gaming",
-    duration: "00:38",
-    durationSeconds: 38,
-    role: "After Motion Z · Visual FX",
-    summary:
-      "Cinematic sword slice impact synchronized to hard trap beats with monochrome contrast and sharp violet energy trail lines.",
+    id: "campaign-playthrough",
+    title: "Full Campaign Playthrough",
+    category: "Long-Form Gaming",
+    duration: "45:15",
+    durationSeconds: 2715,
+    role: "After Motion Z · Sound Mixing",
+    summary: "Seamless story cut balancing in-game dialogue, exploration pacing, and cinematic action beats.",
+    thumbnail: "assets/project-commercial.jpg",
+    videoUrl: "",
+    specs: ["16:9 1080p", "60 FPS", "After Motion Z", "Dialogue Mix"],
+    cuts: [
+      { time: 0.0, label: "Mission Briefing", image: "assets/project-commercial.jpg", zoom: [1.0, 1.07], panY: [-8, 8] },
+      { time: 0.48, label: "Infiltration Phase", image: "assets/project-documentary.jpg", zoom: [1.14, 1.05], panY: [8, -8] },
+      { time: 0.82, label: "Extraction Escape", image: "assets/project-creator.jpg", zoom: [1.03, 1.1], panY: [0, 8] },
+    ],
+  },
+  {
+    id: "tactical-heist",
+    title: "Tactical Heist Mission",
+    category: "Long-Form Gaming",
+    duration: "29:40",
+    durationSeconds: 1780,
+    role: "Mobile Editor · Tension Build",
+    summary: "Full mission playthrough cut to emphasize stealth tension, team comms, and explosive breach moments.",
     thumbnail: "assets/project-music.jpg",
     videoUrl: "",
-    specs: ["9:16 4K", "60 FPS", "After Motion Z", "Edge Glow CC"],
+    specs: ["16:9 Master", "60 FPS", "Mobile Editor", "Audio Foley"],
     cuts: [
-      { time: 0.0, label: "Blade Unsheathe", image: "assets/project-music.jpg", zoom: [1.0, 1.1], panY: [10, -15] },
-      { time: 0.42, label: "Mid-Air Slash", image: "assets/project-music-stage.jpg", zoom: [1.14, 1.04], panY: [-10, 10] },
-      { time: 0.76, label: "Impact Freeze Frame", image: "assets/showreel-hero.jpg", zoom: [1.02, 1.12], panY: [5, -10] },
+      { time: 0.0, label: "Stealth Entry", image: "assets/project-music.jpg", zoom: [1.0, 1.09], panY: [8, -12] },
+      { time: 0.44, label: "Vault Alarm Phase", image: "assets/project-music-stage.jpg", zoom: [1.12, 1.03], panY: [-8, 8] },
+      { time: 0.76, label: "Getaway Pursuit", image: "assets/showreel-hero.jpg", zoom: [1.02, 1.1], panY: [4, -8] },
     ],
   },
   {
-    id: "apex-overcharge",
-    title: "Apex Overcharge",
-    category: "Movement Reel",
-    duration: "00:41",
-    durationSeconds: 41,
-    role: "Gold Motion · Speed Ramping",
-    summary:
-      "Superglide mechanics and wall bounce chains cut to kinetic drum fills, directional pans, and crisp hit shield audio.",
+    id: "dungeon-raid",
+    title: "Full Raid & Boss Fight",
+    category: "Long-Form Gaming",
+    duration: "38:12",
+    durationSeconds: 2292,
+    role: "Gold Motion · Pacing",
+    summary: "Complete dungeon encounter edited with clear combat choreography, mechanic callouts, and clean spatial audio.",
     thumbnail: "assets/project-brand.jpg",
     videoUrl: "",
-    specs: ["9:16 Vertical", "60 FPS", "Gold Motion", "Spatial Sound"],
+    specs: ["16:9 4K", "60 FPS", "Gold Motion", "Spatial Audio"],
     cuts: [
-      { time: 0.0, label: "Slide Hop Momentum", image: "assets/project-brand.jpg", zoom: [1.0, 1.09], panY: [-12, 12] },
-      { time: 0.48, label: "Wall Bounce Hit", image: "assets/project-commercial.jpg", zoom: [1.12, 1.03], panY: [14, -6] },
-      { time: 0.8, label: "Squad Wipe Badge", image: "assets/project-creator.jpg", zoom: [1.02, 1.1], panY: [0, 10] },
+      { time: 0.0, label: "Encounter Opening", image: "assets/project-brand.jpg", zoom: [1.0, 1.08], panY: [-10, 10] },
+      { time: 0.5, label: "Enrage Phase Mechanic", image: "assets/project-commercial.jpg", zoom: [1.1, 1.03], panY: [10, -5] },
+      { time: 0.82, label: "Boss Defeated", image: "assets/project-creator.jpg", zoom: [1.02, 1.08], panY: [0, 8] },
     ],
   },
   {
-    id: "creator-highlight",
-    title: "Streamer Clutch Reel",
-    category: "Creator Highlight",
-    duration: "00:35",
-    durationSeconds: 35,
-    role: "Gaming Editor · Viral Hook",
-    summary:
-      "Shorts-optimized edit with instant 2-second narrative hook, streamer webcam punch-in, and punchy kill sound design.",
+    id: "open-world-deepdive",
+    title: "Open World Gameplay Deep Dive",
+    category: "Long-Form Gaming",
+    duration: "41:50",
+    durationSeconds: 2510,
+    role: "Gaming Editor · Episodic Cut",
+    summary: "Immersive open world exploration video with organic travel pacing, lore discoveries, and balanced editing rhythm.",
     thumbnail: "assets/project-creator.jpg",
     videoUrl: "",
-    specs: ["9:16 YouTube", "60 FPS", "Gaming Editor", "Retention Cut"],
+    specs: ["16:9 Master", "60 FPS", "Gaming Editor", "Story Pacing"],
     cuts: [
-      { time: 0.0, label: "Hook & Setup", image: "assets/project-creator.jpg", zoom: [1.0, 1.08], panY: [-8, 12] },
-      { time: 0.44, label: "1v1 Duel Peak", image: "assets/showreel-hero.jpg", zoom: [1.13, 1.04], panY: [10, -10] },
-      { time: 0.78, label: "Hype Climax", image: "assets/project-documentary.jpg", zoom: [1.02, 1.1], panY: [-6, 8] },
+      { time: 0.0, label: "World Exploration", image: "assets/project-creator.jpg", zoom: [1.0, 1.07], panY: [-6, 10] },
+      { time: 0.46, label: "Hidden Lore Secret", image: "assets/showreel-hero.jpg", zoom: [1.11, 1.04], panY: [8, -8] },
+      { time: 0.8, label: "Journey Milestone", image: "assets/project-documentary.jpg", zoom: [1.02, 1.08], panY: [-5, 6] },
     ],
   },
   {
-    id: "cyber-showdown",
-    title: "Cyber Arena Showdown",
-    category: "Esports Short",
-    duration: "00:29",
-    durationSeconds: 29,
-    role: "Mobile Editor · Color Grade",
-    summary:
-      "Monochrome tournament play with high dynamic range highlights, subtle purple beam accents, and sub-bass impact risers.",
+    id: "creator-special",
+    title: "Creator Gameplay Special",
+    category: "Long-Form Gaming",
+    duration: "26:15",
+    durationSeconds: 1575,
+    role: "Mobile Editor · Retention Flow",
+    summary: "Long-form gaming video structured with quick setup, seamless narrative progression, and punchy comedy pacing.",
     thumbnail: "assets/project-music-stage.jpg",
     videoUrl: "",
-    specs: ["9:16 4K", "60 FPS", "Mobile Editor", "Grade & CC"],
+    specs: ["16:9 1080p", "60 FPS", "Mobile Editor", "Retention Flow"],
     cuts: [
-      { time: 0.0, label: "Stage Spotlight", image: "assets/project-music-stage.jpg", zoom: [1.0, 1.1], panY: [12, -12] },
-      { time: 0.38, label: "Flick Shot Beat Drop", image: "assets/project-music.jpg", zoom: [1.15, 1.06], panY: [-10, 10] },
-      { time: 0.72, label: "Victory Walk", image: "assets/project-commercial.jpg", zoom: [1.03, 1.12], panY: [5, -5] },
+      { time: 0.0, label: "Video Hook", image: "assets/project-music-stage.jpg", zoom: [1.0, 1.08], panY: [10, -10] },
+      { time: 0.42, label: "Climax Challenge", image: "assets/project-music.jpg", zoom: [1.12, 1.05], panY: [-8, 8] },
+      { time: 0.76, label: "End Screen Teaser", image: "assets/project-commercial.jpg", zoom: [1.03, 1.09], panY: [4, -4] },
     ],
   },
   {
-    id: "battle-royale-finale",
-    title: "Battle Royale Victory",
-    category: "Victory Cut",
-    duration: "00:36",
-    durationSeconds: 36,
-    role: "Gold Motion · Climax Flow",
-    summary:
-      "Final zone 1v1 showdown with muted ambient tension, heartbeat riser sound design, and clean slow-mo victory hit.",
+    id: "season-finale",
+    title: "Season Finale Long-Form Cut",
+    category: "Long-Form Gaming",
+    duration: "52:40",
+    durationSeconds: 3160,
+    role: "Gold Motion · Narrative Climax",
+    summary: "Full season conclusion gameplay episode with high emotional resonance, clean audio mastering, and dramatic ending.",
     thumbnail: "assets/showreel-hero.jpg",
     videoUrl: "",
-    specs: ["9:16 Vertical", "60 FPS", "Gold Motion", "Climax Mix"],
+    specs: ["16:9 4K", "60 FPS", "Gold Motion", "Full Storyline"],
     cuts: [
-      { time: 0.0, label: "Final Zone Closing", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.08], panY: [0, -15] },
-      { time: 0.45, label: "High Ground Peek", image: "assets/project-brand.jpg", zoom: [1.12, 1.05], panY: [10, -10] },
-      { time: 0.76, label: "Victory Screen Freeze", image: "assets/project-creator.jpg", zoom: [1.04, 1.14], panY: [-8, 8] },
+      { time: 0.0, label: "Season Recap Hook", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.07], panY: [0, -12] },
+      { time: 0.48, label: "Final Battle Assembly", image: "assets/project-brand.jpg", zoom: [1.1, 1.04], panY: [8, -8] },
+      { time: 0.82, label: "Credits & Finale Frame", image: "assets/project-creator.jpg", zoom: [1.03, 1.11], panY: [-6, 6] },
     ],
   },
 ];
 
 // ============================================================================
-// Portfolio Grid Rendering (8 9:16 Vertical Video Previews)
+// Portfolio Grid Rendering (8 9:16 Video Preview Boxes — Details Removed)
+// "in all preview boxes , remove all information , I just wanted to show my work not details"
 // ============================================================================
 
 const portfolioGrid = document.getElementById("portfolio-grid");
@@ -218,36 +211,27 @@ function renderProjects() {
     card.setAttribute("data-reveal", "");
     card.dataset.delay = String((idx % 4) * 60);
 
+    // Pure 9:16 visual preview card: all textual details and metadata removed
     card.innerHTML = `
       <button
         type="button"
         class="project-card-trigger"
         data-project-id="${project.id}"
-        aria-label="Play 9:16 Preview: ${project.title}"
+        aria-label="Play preview: ${project.title}"
       >
         <div class="video-frame">
           <img
             src="${project.thumbnail}"
-            alt="${project.title} 9:16 vertical video preview frame"
+            alt="Gaming video preview frame"
             class="video-thumb"
           />
           <div class="frame-overlay">
             <span class="project-play-icon" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M8 5.14v13.72a1 1 0 0 0 1.52.85l11-6.86a1 1 0 0 0 0-1.7l-11-6.86A1 1 0 0 0 8 5.14z" />
               </svg>
             </span>
           </div>
-          <div class="frame-timecode">${project.duration}</div>
-        </div>
-
-        <div class="project-info">
-          <div class="project-top-row">
-            <h3 class="project-title">${project.title}</h3>
-            <span class="project-category">${project.category}</span>
-          </div>
-          <p class="project-summary">${project.summary}</p>
-          <span class="project-role">${project.role}</span>
         </div>
       </button>
     `;
@@ -263,7 +247,7 @@ function renderProjects() {
 }
 
 // ============================================================================
-// Interactive 9:16 Screening Room Modal (Native MP4 or 9:16 Canvas Reel)
+// Interactive Screening Room Modal (Native MP4 or 9:16 Canvas Reel)
 // ============================================================================
 
 const modal = document.getElementById("screening-modal");
@@ -339,7 +323,7 @@ async function drawCanvasFrame() {
 
   if (img) {
     const zoomStart = current.zoom ? current.zoom[0] : 1.0;
-    const zoomEnd = current.zoom ? current.zoom[1] : 1.1;
+    const zoomEnd = current.zoom ? current.zoom[1] : 1.08;
     const panYStart = current.panY ? current.panY[0] : 0;
     const panYEnd = current.panY ? current.panY[1] : 0;
 
@@ -365,9 +349,9 @@ async function drawCanvasFrame() {
     const y = (h - drawH) / 2 + offsetY;
     ctx.drawImage(img, x, y, drawW, drawH);
 
-    // Subtle velocity impact flash during first 6% of each cut
-    if (localT < 0.06) {
-      const flashAlpha = (1 - localT / 0.06) * 0.35;
+    // Subtle cut transition fade during initial 5% of shot
+    if (localT < 0.05) {
+      const flashAlpha = (1 - localT / 0.05) * 0.28;
       ctx.fillStyle = `rgba(255, 255, 255, ${flashAlpha.toFixed(3)})`;
       ctx.fillRect(0, 0, w, h);
     }
@@ -381,7 +365,7 @@ async function drawCanvasFrame() {
   ctx.fillRect(0, h - bottomBarH, w, bottomBarH);
 
   // Top header text
-  ctx.font = "700 22px Inter, sans-serif";
+  ctx.font = "700 20px Inter, sans-serif";
   ctx.fillStyle = "rgba(255, 255, 255, 0.95)";
   ctx.textBaseline = "middle";
   ctx.textAlign = "left";
@@ -390,10 +374,10 @@ async function drawCanvasFrame() {
   ctx.textAlign = "right";
   ctx.font = "600 18px Inter, sans-serif";
   ctx.fillStyle = "#a855f7";
-  ctx.fillText("9:16 60FPS", w - 28, topBarH / 2);
+  ctx.fillText("16:9 MASTER", w - 28, topBarH / 2);
 
   // Bottom caption & live frame timecode
-  ctx.font = "600 20px Inter, sans-serif";
+  ctx.font = "600 19px Inter, sans-serif";
   ctx.fillStyle = "rgba(255, 255, 255, 0.85)";
   ctx.textAlign = "left";
   ctx.fillText(current.label.toUpperCase(), 28, h - bottomBarH / 2);
@@ -402,7 +386,7 @@ async function drawCanvasFrame() {
   const frameNum = Math.floor((currentSec % 1) * 60);
   const tcText = `${formatSeconds(currentSec)}:${String(frameNum).padStart(2, "0")}`;
   ctx.textAlign = "right";
-  ctx.font = "600 20px Inter, sans-serif";
+  ctx.font = "600 19px Inter, sans-serif";
   ctx.fillStyle = "rgba(255, 255, 255, 0.95)";
   ctx.fillText(tcText, w - 28, h - bottomBarH / 2);
 }
@@ -428,8 +412,7 @@ function tickPlayer(timestamp) {
   const dt = (timestamp - playerState.lastFrameTime) / 1000;
   playerState.lastFrameTime = timestamp;
 
-  // Vertical preview speed
-  const previewCycleSeconds = Math.min(18, playerState.project.durationSeconds);
+  const previewCycleSeconds = Math.min(22, playerState.project.durationSeconds);
   playerState.progress += dt / previewCycleSeconds;
 
   if (playerState.progress >= 1) {
@@ -468,7 +451,7 @@ function openProjectModal(projectId) {
   playerState.project = project;
   playerState.progress = 0;
 
-  modalCategory.textContent = project.category;
+  modalCategory.textContent = "16:9 Long-Form Gaming";
   modalTitle.textContent = project.title;
   modalDesc.textContent = project.summary;
   modalSpecs.innerHTML = project.specs
@@ -636,5 +619,5 @@ if (mobileMenuBtn && mobileNav) {
   });
 }
 
-// Initial portfolio render: 8 9:16 vertical video previews
+// Initial portfolio render: 8 9:16 vertical video previews (pure visual cards)
 renderProjects();
