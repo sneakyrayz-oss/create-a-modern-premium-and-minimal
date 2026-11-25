@@ -121,7 +121,7 @@ a {
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.01em;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-btn);
   border: 1px solid var(--ink);
   cursor: pointer;
   transition:
@@ -433,7 +433,7 @@ a {
   background-color: var(--ink);
   color: var(--bg);
   border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-btn);
   font-size: 13px;
   font-weight: 600;
   letter-spacing: -0.01em;
