@@ -199,7 +199,6 @@ function renderProjects(category = "all") {
             src="${project.thumbnail}"
             alt="${project.title} video preview frame"
             class="video-thumb"
-            loading="lazy"
           />
           <div class="frame-overlay">
             <span class="project-play-icon" aria-hidden="true">
