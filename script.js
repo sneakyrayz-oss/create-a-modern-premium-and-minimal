@@ -6,27 +6,6 @@
 
 const PROJECTS = [
   {
-    id: "showreel-gaming",
-    title: "Long-Form Gaming Video Showcase",
-    category: "Featured Showcase",
-    duration: "18:24",
-    durationSeconds: 1104,
-    role: "Mobile Editor · Long-Form 16:9 Editor",
-    summary:
-      "Curated showcase of retention-paced 16:9 long-form gaming video editing, narrative progression, dialogue sculpting, and clean sound mixing.",
-    thumbnail: "assets/showreel-hero.jpg",
-    videoUrl: "",
-    specs: ["16:9 4K", "60 FPS", "Long-Form Pacing", "Mobile Editor"],
-    cuts: [
-      { time: 0.0, label: "01 — Episode Narrative Intro", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.08], panY: [0, -12] },
-      { time: 0.22, label: "02 — Critical Story Encounter", image: "assets/project-documentary.jpg", zoom: [1.04, 1.12], panY: [-8, 8] },
-      { time: 0.45, label: "03 — Boss Battle Sequence", image: "assets/project-music.jpg", zoom: [1.0, 1.1], panY: [8, -8] },
-      { time: 0.68, label: "04 — Tactical Mission Climax", image: "assets/project-commercial.jpg", zoom: [1.06, 1.14], panY: [0, 10] },
-      { time: 0.88, label: "05 — Chapter Outro & Cliffhanger", image: "assets/project-brand.jpg", zoom: [1.02, 1.08], panY: [-8, 4] },
-    ],
-    featuredOnly: true,
-  },
-  {
     id: "storyline-walkthrough",
     title: "Storyline Walkthrough — Episode 01",
     category: "Long-Form Gaming",
@@ -201,7 +180,7 @@ function createRevealObserver() {
 }
 
 function renderProjects() {
-  const items = PROJECTS.filter((project) => !project.featuredOnly);
+  const items = PROJECTS;
 
   portfolioGrid.innerHTML = "";
 
