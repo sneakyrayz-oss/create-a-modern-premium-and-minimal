@@ -771,37 +771,46 @@ a {
 }
 
 /* ==========================================================================
-   Contact Section
+   Contact Section (Minimal, Discord-First, Order Form Removed)
    ========================================================================== */
 
 .contact-section {
   border-top: 1px solid var(--border);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: start;
+.contact-box {
+  max-width: 660px;
+  margin: 0 auto;
 }
 
-.contact-info .section-title {
-  margin-bottom: 18px;
+.contact-box-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.contact-box-header .section-title {
+  margin-bottom: 14px;
 }
 
 .contact-lead {
-  margin: 0 0 32px;
+  margin: 0 auto;
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.6;
   color: var(--ink-secondary);
+  max-width: 540px;
 }
 
 .discord-card {
-  padding: 22px;
+  padding: 24px;
   background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   margin-bottom: 28px;
+}
+
+.discord-card-hero {
+  border-color: var(--border-strong);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.04);
 }
 
 .discord-card-top {
@@ -847,7 +856,7 @@ a {
 
 .discord-id {
   margin: 0;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--ink);
@@ -879,75 +888,6 @@ a {
 
 .meta-val {
   font-weight: 600;
-  color: var(--ink);
-}
-
-.contact-form-wrap {
-  padding: 28px;
-  background-color: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.form-label {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--ink);
-}
-
-.form-input {
-  width: 100%;
-  padding: 12px 14px;
-  font-size: 14px;
-  color: var(--ink);
-  background-color: var(--bg);
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-md);
-  transition: border-color 0.2s ease;
-}
-
-.form-input::placeholder {
-  color: var(--ink-muted);
-}
-
-.form-input:hover {
-  border-color: var(--ink);
-}
-
-.form-textarea {
-  resize: vertical;
-  min-height: 110px;
-}
-
-.form-actions {
-  margin-top: 4px;
-}
-
-.form-feedback {
-  margin: 12px 0 0;
-  min-height: 20px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--ink-secondary);
-}
-
-.form-feedback.is-success {
-  color: var(--accent);
-}
-
-.form-feedback.is-error {
   color: var(--ink);
 }
 
@@ -1021,13 +961,13 @@ a {
 
 .modal-shell {
   width: 100%;
-  max-width: 960px;
-  max-height: 92vh;
+  max-width: 460px;
+  max-height: 94vh;
   overflow-y: auto;
   background-color: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 24px;
+  padding: 20px;
   box-shadow: 0 32px 64px rgba(0, 0, 0, 0.28);
   transform: translateY(10px) scale(0.99);
   transition: transform 0.28s var(--ease-out);
@@ -1042,30 +982,30 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .modal-category {
   display: block;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--accent);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .modal-title {
   margin: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--ink);
 }
 
 .modal-close-btn {
-  padding: 9px 14px;
-  font-size: 13px;
+  padding: 8px 12px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--bg);
   background-color: var(--ink);
@@ -1078,10 +1018,13 @@ a {
   background-color: #27272a;
 }
 
-.player-stage {
+.player-stage,
+.player-stage-vertical {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 9 / 16;
   width: 100%;
+  max-height: 60vh;
+  margin: 0 auto;
   background-color: #000000;
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -1235,9 +1178,16 @@ a {
    Responsive
    ========================================================================== */
 
+@media (max-width: 1024px) {
+  .portfolio-grid,
+  .portfolio-grid-vertical {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 18px;
+  }
+}
+
 @media (max-width: 960px) {
-  .about-grid,
-  .contact-grid {
+  .about-grid {
     grid-template-columns: 1fr;
     gap: 44px;
   }
@@ -1261,10 +1211,6 @@ a {
     display: inline-flex;
   }
 
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-  }
-
   .showreel-meta {
     flex-direction: column;
     align-items: flex-start;
@@ -1277,7 +1223,31 @@ a {
   }
 
   .tools-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-grid,
+  .portfolio-grid-vertical {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 10px;
+  }
+
+  .tools-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-title {
+    font-size: 13px;
+  }
+
+  .project-summary {
+    display: none;
+  }
+
+  .project-role {
+    font-size: 10px;
   }
 }
 

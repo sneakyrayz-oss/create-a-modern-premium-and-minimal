@@ -1,148 +1,182 @@
 /**
- * RAYZ — Video Editor Portfolio
- * Handles portfolio rendering, category filtering, interactive canvas/video
- * screening player, blur+opacity scroll reveal animations, Discord ID copy,
- * and client inquiry preparation.
+ * RAYZ — Gaming Video Editor Portfolio
+ * 9:16 Vertical Video Previews, Velocity & Flow Montages
+ * Direct Discord Contact: rayz_69
  */
 
 const PROJECTS = [
   {
-    id: "showreel-2026",
-    title: "2026 Editorial & Commercial Showreel",
-    category: "Commercial",
-    duration: "01:34",
-    durationSeconds: 94,
-    role: "Lead Editor · Sound Design · Grade",
+    id: "showreel-gaming",
+    title: "2026 Gaming Montage & Velocity Reel",
+    category: "Featured Reel",
+    duration: "01:12",
+    durationSeconds: 72,
+    role: "Mobile Editor · After Motion Z · Gold Motion",
     summary:
-      "A curated montage of commercial campaigns, narrative documentary cuts, and rhythmic brand visuals edited over the past year.",
+      "Curated montage of high-speed gaming velocity cuts, frame-locked beat syncs, clean gun audio transients, and 9:16 vertical mobile edits.",
     thumbnail: "assets/showreel-hero.jpg",
-    videoUrl: "", // Optional: set to an .mp4 path or URL to play native video
-    specs: ["4K ProRes 422", "24 FPS", "DaVinci Resolve", "Sound Mix"],
+    videoUrl: "",
+    specs: ["9:16 & 4K", "60 FPS", "Velocity Sync", "After Motion Z"],
     cuts: [
-      { time: 0.0, label: "01 — Opening Hook", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.09], panX: [0, -18] },
-      { time: 0.2, label: "02 — Product Precision", image: "assets/project-commercial.jpg", zoom: [1.04, 1.12], panX: [-10, 14] },
-      { time: 0.4, label: "03 — Narrative Beat", image: "assets/project-documentary.jpg", zoom: [1.0, 1.07], panX: [12, -10] },
-      { time: 0.6, label: "04 — Rhythm Climax", image: "assets/project-music.jpg", zoom: [1.06, 1.15], panX: [0, 12] },
-      { time: 0.8, label: "05 — Architectural Finish", image: "assets/project-brand.jpg", zoom: [1.02, 1.08], panX: [-12, 8] },
+      { time: 0.0, label: "01 — Opening Velocity Hook", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.1], panY: [0, -15] },
+      { time: 0.22, label: "02 — Sniper Headshot Impact", image: "assets/project-documentary.jpg", zoom: [1.05, 1.18], panY: [-10, 10] },
+      { time: 0.45, label: "03 — Katana Neon Slash", image: "assets/project-music.jpg", zoom: [1.0, 1.12], panY: [10, -10] },
+      { time: 0.68, label: "04 — Clutch Defuse Beat Drop", image: "assets/project-commercial.jpg", zoom: [1.08, 1.15], panY: [0, 12] },
+      { time: 0.88, label: "05 — Champion Victory Finale", image: "assets/project-brand.jpg", zoom: [1.02, 1.09], panY: [-10, 5] },
     ],
     featuredOnly: true,
   },
   {
-    id: "apex-night-run",
-    title: "Apex Night Run — Spec Spot",
-    category: "Commercial",
-    duration: "00:48",
-    durationSeconds: 48,
-    role: "Offline & Online Edit · Sound Design",
+    id: "overdrive-velocity",
+    title: "Overdrive Velocity",
+    category: "Velocity Sync",
+    duration: "00:32",
+    durationSeconds: 32,
+    role: "After Motion Z · Flow Ramp",
     summary:
-      "High-contrast automotive spec commercial cut to percussive foley transients, engine resonance, and tight match-cuts.",
+      "Hyper-fluid speed ramp montage cut to heavy 808 bass kicks, seamless screen rotation wipes, and impact color flashes.",
     thumbnail: "assets/showreel-hero.jpg",
     videoUrl: "",
-    specs: ["4K Anamorphic", "24 FPS", "Premiere Pro", "Foley Layering"],
+    specs: ["9:16 Vertical", "60 FPS", "After Motion Z", "Bass Drop Sync"],
     cuts: [
-      { time: 0.0, label: "Tunnel Entry", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.1], panX: [0, -24] },
-      { time: 0.35, label: "Headlight Reflection", image: "assets/showreel-hero.jpg", zoom: [1.14, 1.04], panX: [16, -6] },
-      { time: 0.7, label: "Final Silhouette", image: "assets/project-brand.jpg", zoom: [1.02, 1.09], panX: [-8, 12] },
+      { time: 0.0, label: "Speed Ramp Entry", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.14], panY: [0, -20] },
+      { time: 0.4, label: "Transient Peak", image: "assets/project-music.jpg", zoom: [1.12, 1.05], panY: [15, -5] },
+      { time: 0.75, label: "Clean Exit Blur", image: "assets/project-brand.jpg", zoom: [1.02, 1.1], panY: [-5, 15] },
     ],
   },
   {
-    id: "monolith-audio",
-    title: "Monolith Studio — Hardware Launch",
-    category: "Commercial",
-    duration: "01:15",
-    durationSeconds: 75,
-    role: "Lead Editor · Color Finishing",
+    id: "shadow-clutch",
+    title: "Shadow Clutch 1v4",
+    category: "Tactical FPS",
+    duration: "00:28",
+    durationSeconds: 28,
+    role: "Gaming Editor · Kill Sync",
     summary:
-      "Minimalist industrial design reveal emphasizing tactile material transitions, crisp whip-cuts, and clean studio acoustics.",
+      "Frame-accurate match cuts synchronized to weapon triggers, clean kill banners, and sharp directional audio foley.",
     thumbnail: "assets/project-commercial.jpg",
     videoUrl: "",
-    specs: ["4K Master", "24 FPS", "DaVinci Resolve", "Rec.709 Grade"],
+    specs: ["9:16 1080p", "60 FPS", "Gaming Editor", "Gun Foley"],
     cuts: [
-      { time: 0.0, label: "Surface Reveal", image: "assets/project-commercial.jpg", zoom: [1.0, 1.08], panX: [-10, 12] },
-      { time: 0.45, label: "Macro Detail", image: "assets/project-commercial.jpg", zoom: [1.16, 1.06], panX: [14, -8] },
-      { time: 0.75, label: "Studio Close", image: "assets/project-creator.jpg", zoom: [1.02, 1.1], panX: [0, 14] },
+      { time: 0.0, label: "Corridor Peeking", image: "assets/project-commercial.jpg", zoom: [1.0, 1.08], panY: [-10, 10] },
+      { time: 0.45, label: "Flick Shot Impact", image: "assets/project-documentary.jpg", zoom: [1.16, 1.06], panY: [10, -10] },
+      { time: 0.78, label: "Defuse Timer Tick", image: "assets/project-creator.jpg", zoom: [1.04, 1.12], panY: [0, 10] },
     ],
   },
   {
-    id: "stillness-before-gun",
-    title: "Stillness Before the Gun",
-    category: "Documentary",
-    duration: "04:20",
-    durationSeconds: 260,
-    role: "Narrative Editor · Dialogue Mix",
+    id: "sniper-pulse",
+    title: "Sniper Pulse Flow",
+    category: "Montage Edit",
+    duration: "00:45",
+    durationSeconds: 45,
+    role: "Mobile Editor · Pacing",
     summary:
-      "Short-form athlete portrait built around breath, ambient stadium space, and restrained editorial pacing before race start.",
+      "Quickscope headshot flow with tactile screen recoil shakes, rhythmic velocity slowdowns, and subtle violet edge rim lighting.",
     thumbnail: "assets/project-documentary.jpg",
     videoUrl: "",
-    specs: ["4K DCI", "23.976 FPS", "Story Assembly", "Audio Stem Mix"],
+    specs: ["9:16 Vertical", "60 FPS", "Mobile Editor", "Recoil Sync"],
     cuts: [
-      { time: 0.0, label: "Morning Mist", image: "assets/project-documentary.jpg", zoom: [1.0, 1.06], panX: [-8, 10] },
-      { time: 0.4, label: "Starting Blocks", image: "assets/project-documentary.jpg", zoom: [1.1, 1.17], panX: [10, -10] },
-      { time: 0.75, label: "Quiet Focus", image: "assets/project-brand.jpg", zoom: [1.0, 1.07], panX: [8, -12] },
+      { time: 0.0, label: "Breath Hold", image: "assets/project-documentary.jpg", zoom: [1.0, 1.06], panY: [-8, 12] },
+      { time: 0.35, label: "Scope Alignment", image: "assets/showreel-hero.jpg", zoom: [1.15, 1.05], panY: [12, -8] },
+      { time: 0.72, label: "Triple Collateral", image: "assets/project-music.jpg", zoom: [1.05, 1.18], panY: [0, 14] },
     ],
   },
   {
-    id: "afterglow-visual",
-    title: "Afterglow — Live Performance",
-    category: "Music Video",
-    duration: "03:08",
-    durationSeconds: 188,
-    role: "Rhythm Edit · Look Development",
+    id: "neon-strike",
+    title: "Neon Katana Strike",
+    category: "Anime Gaming",
+    duration: "00:38",
+    durationSeconds: 38,
+    role: "After Motion Z · Visual FX",
     summary:
-      "Single-beam studio performance piece cut tightly on beat subdivisions with dynamic speed ramps and monochrome contrast.",
+      "Cinematic sword slice impact synchronized to hard trap beats with monochrome contrast and sharp violet energy trail lines.",
     thumbnail: "assets/project-music.jpg",
     videoUrl: "",
-    specs: ["4K UHD", "24 FPS", "After Effects", "Beat-Locked Cut"],
+    specs: ["9:16 4K", "60 FPS", "After Motion Z", "Edge Glow CC"],
     cuts: [
-      { time: 0.0, label: "Intro Beam", image: "assets/project-music.jpg", zoom: [1.0, 1.09], panX: [0, 16] },
-      { time: 0.38, label: "Chorus Impact", image: "assets/project-music.jpg", zoom: [1.15, 1.05], panX: [-14, 8] },
-      { time: 0.72, label: "Outro Fade", image: "assets/showreel-hero.jpg", zoom: [1.03, 1.1], panX: [10, -10] },
+      { time: 0.0, label: "Blade Unsheathe", image: "assets/project-music.jpg", zoom: [1.0, 1.1], panY: [10, -15] },
+      { time: 0.42, label: "Mid-Air Slash", image: "assets/project-music-stage.jpg", zoom: [1.14, 1.04], panY: [-10, 10] },
+      { time: 0.76, label: "Impact Freeze Frame", image: "assets/showreel-hero.jpg", zoom: [1.02, 1.12], panY: [5, -10] },
     ],
   },
   {
-    id: "form-and-concrete",
-    title: "Form & Concrete — Studio Profile",
-    category: "Brand Film",
-    duration: "01:52",
-    durationSeconds: 112,
-    role: "Editorial · Atmospheric Sound",
+    id: "apex-overcharge",
+    title: "Apex Overcharge",
+    category: "Movement Reel",
+    duration: "00:41",
+    durationSeconds: 41,
+    role: "Gold Motion · Speed Ramping",
     summary:
-      "Architectural brand film following daylight across raw concrete volumes, guided by minimalist ambient scoring.",
+      "Superglide mechanics and wall bounce chains cut to kinetic drum fills, directional pans, and crisp hit shield audio.",
     thumbnail: "assets/project-brand.jpg",
     videoUrl: "",
-    specs: ["4K ProRes", "24 FPS", "DaVinci Resolve", "Spatial Sound"],
+    specs: ["9:16 Vertical", "60 FPS", "Gold Motion", "Spatial Sound"],
     cuts: [
-      { time: 0.0, label: "Shadow Geometry", image: "assets/project-brand.jpg", zoom: [1.0, 1.07], panX: [-12, 12] },
-      { time: 0.5, label: "Gallery Walk", image: "assets/project-brand.jpg", zoom: [1.12, 1.03], panX: [14, -6] },
-      { time: 0.8, label: "Closing Frame", image: "assets/project-commercial.jpg", zoom: [1.02, 1.08], panX: [0, -10] },
+      { time: 0.0, label: "Slide Hop Momentum", image: "assets/project-brand.jpg", zoom: [1.0, 1.09], panY: [-12, 12] },
+      { time: 0.48, label: "Wall Bounce Hit", image: "assets/project-commercial.jpg", zoom: [1.12, 1.03], panY: [14, -6] },
+      { time: 0.8, label: "Squad Wipe Badge", image: "assets/project-creator.jpg", zoom: [1.02, 1.1], panY: [0, 10] },
     ],
   },
   {
-    id: "inside-the-frame",
-    title: "Inside the Frame — Creator Essay",
-    category: "Creator",
-    duration: "11:40",
-    durationSeconds: 700,
-    role: "Retention Edit · Motion Graphics",
+    id: "creator-highlight",
+    title: "Streamer Clutch Reel",
+    category: "Creator Highlight",
+    duration: "00:35",
+    durationSeconds: 35,
+    role: "Gaming Editor · Viral Hook",
     summary:
-      "Long-form YouTube essay structured for audience retention with clean typography callouts, B-roll rhythm, and tight story chapters.",
+      "Shorts-optimized edit with instant 2-second narrative hook, streamer webcam punch-in, and punchy kill sound design.",
     thumbnail: "assets/project-creator.jpg",
     videoUrl: "",
-    specs: ["4K YouTube", "24 FPS", "Premiere + AE", "Retention Pacing"],
+    specs: ["9:16 YouTube", "60 FPS", "Gaming Editor", "Retention Cut"],
     cuts: [
-      { time: 0.0, label: "Chapter 01 Hook", image: "assets/project-creator.jpg", zoom: [1.0, 1.08], panX: [-8, 12] },
-      { time: 0.42, label: "Timeline Breakdown", image: "assets/project-creator.jpg", zoom: [1.13, 1.04], panX: [12, -10] },
-      { time: 0.78, label: "Final Takeaway", image: "assets/project-documentary.jpg", zoom: [1.02, 1.09], panX: [-6, 10] },
+      { time: 0.0, label: "Hook & Setup", image: "assets/project-creator.jpg", zoom: [1.0, 1.08], panY: [-8, 12] },
+      { time: 0.44, label: "1v1 Duel Peak", image: "assets/showreel-hero.jpg", zoom: [1.13, 1.04], panY: [10, -10] },
+      { time: 0.78, label: "Hype Climax", image: "assets/project-documentary.jpg", zoom: [1.02, 1.1], panY: [-6, 8] },
+    ],
+  },
+  {
+    id: "cyber-showdown",
+    title: "Cyber Arena Showdown",
+    category: "Esports Short",
+    duration: "00:29",
+    durationSeconds: 29,
+    role: "Mobile Editor · Color Grade",
+    summary:
+      "Monochrome tournament play with high dynamic range highlights, subtle purple beam accents, and sub-bass impact risers.",
+    thumbnail: "assets/project-music-stage.jpg",
+    videoUrl: "",
+    specs: ["9:16 4K", "60 FPS", "Mobile Editor", "Grade & CC"],
+    cuts: [
+      { time: 0.0, label: "Stage Spotlight", image: "assets/project-music-stage.jpg", zoom: [1.0, 1.1], panY: [12, -12] },
+      { time: 0.38, label: "Flick Shot Beat Drop", image: "assets/project-music.jpg", zoom: [1.15, 1.06], panY: [-10, 10] },
+      { time: 0.72, label: "Victory Walk", image: "assets/project-commercial.jpg", zoom: [1.03, 1.12], panY: [5, -5] },
+    ],
+  },
+  {
+    id: "battle-royale-finale",
+    title: "Battle Royale Victory",
+    category: "Victory Cut",
+    duration: "00:36",
+    durationSeconds: 36,
+    role: "Gold Motion · Climax Flow",
+    summary:
+      "Final zone 1v1 showdown with muted ambient tension, heartbeat riser sound design, and clean slow-mo victory hit.",
+    thumbnail: "assets/showreel-hero.jpg",
+    videoUrl: "",
+    specs: ["9:16 Vertical", "60 FPS", "Gold Motion", "Climax Mix"],
+    cuts: [
+      { time: 0.0, label: "Final Zone Closing", image: "assets/showreel-hero.jpg", zoom: [1.0, 1.08], panY: [0, -15] },
+      { time: 0.45, label: "High Ground Peek", image: "assets/project-brand.jpg", zoom: [1.12, 1.05], panY: [10, -10] },
+      { time: 0.76, label: "Victory Screen Freeze", image: "assets/project-creator.jpg", zoom: [1.04, 1.14], panY: [-8, 8] },
     ],
   },
 ];
 
 // ============================================================================
-// Portfolio Grid Rendering & Filtering
+// Portfolio Grid Rendering (8 9:16 Vertical Video Previews)
 // ============================================================================
 
 const portfolioGrid = document.getElementById("portfolio-grid");
-const filterButtons = document.querySelectorAll(".filter-btn");
 const revealObserver = createRevealObserver();
 
 function createRevealObserver() {
@@ -173,11 +207,8 @@ function createRevealObserver() {
   return observer;
 }
 
-function renderProjects(category = "all") {
-  const items = PROJECTS.filter((project) => {
-    if (project.featuredOnly) return false;
-    return category === "all" || project.category === category;
-  });
+function renderProjects() {
+  const items = PROJECTS.filter((project) => !project.featuredOnly);
 
   portfolioGrid.innerHTML = "";
 
@@ -185,19 +216,19 @@ function renderProjects(category = "all") {
     const card = document.createElement("article");
     card.className = "project-card";
     card.setAttribute("data-reveal", "");
-    card.dataset.delay = String((idx % 2) * 80);
+    card.dataset.delay = String((idx % 4) * 60);
 
     card.innerHTML = `
       <button
         type="button"
         class="project-card-trigger"
         data-project-id="${project.id}"
-        aria-label="Play ${project.title}"
+        aria-label="Play 9:16 Preview: ${project.title}"
       >
         <div class="video-frame">
           <img
             src="${project.thumbnail}"
-            alt="${project.title} video preview frame"
+            alt="${project.title} 9:16 vertical video preview frame"
             class="video-thumb"
           />
           <div class="frame-overlay">
@@ -231,20 +262,8 @@ function renderProjects(category = "all") {
   });
 }
 
-filterButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    filterButtons.forEach((b) => {
-      b.classList.remove("is-active");
-      b.setAttribute("aria-selected", "false");
-    });
-    btn.classList.add("is-active");
-    btn.setAttribute("aria-selected", "true");
-    renderProjects(btn.dataset.filter);
-  });
-});
-
 // ============================================================================
-// Interactive Screening Room Modal (Supports native MP4 or Canvas Reel Player)
+// Interactive 9:16 Screening Room Modal (Native MP4 or 9:16 Canvas Reel)
 // ============================================================================
 
 const modal = document.getElementById("screening-modal");
@@ -320,12 +339,12 @@ async function drawCanvasFrame() {
 
   if (img) {
     const zoomStart = current.zoom ? current.zoom[0] : 1.0;
-    const zoomEnd = current.zoom ? current.zoom[1] : 1.08;
-    const panStart = current.panX ? current.panX[0] : 0;
-    const panEnd = current.panX ? current.panX[1] : 0;
+    const zoomEnd = current.zoom ? current.zoom[1] : 1.1;
+    const panYStart = current.panY ? current.panY[0] : 0;
+    const panYEnd = current.panY ? current.panY[1] : 0;
 
     const scale = zoomStart + (zoomEnd - zoomStart) * localT;
-    const offsetX = panStart + (panEnd - panStart) * localT;
+    const offsetY = panYStart + (panYEnd - panYStart) * localT;
 
     const imgRatio = img.width / img.height;
     const canvasRatio = w / h;
@@ -342,37 +361,50 @@ async function drawCanvasFrame() {
     drawW *= scale;
     drawH *= scale;
 
-    const x = (w - drawW) / 2 + offsetX;
-    const y = (h - drawH) / 2;
+    const x = (w - drawW) / 2;
+    const y = (h - drawH) / 2 + offsetY;
     ctx.drawImage(img, x, y, drawW, drawH);
 
-    // Subtle editorial cut-in fade for the first 6% of each shot
+    // Subtle velocity impact flash during first 6% of each cut
     if (localT < 0.06) {
-      const fadeAlpha = (1 - localT / 0.06) * 0.45;
-      ctx.fillStyle = `rgba(0, 0, 0, ${fadeAlpha.toFixed(3)})`;
+      const flashAlpha = (1 - localT / 0.06) * 0.35;
+      ctx.fillStyle = `rgba(255, 255, 255, ${flashAlpha.toFixed(3)})`;
       ctx.fillRect(0, 0, w, h);
     }
   }
 
-  // Subtle letterbox bars for cinema preview feel
-  const barHeight = 32;
-  ctx.fillStyle = "#000000";
-  ctx.fillRect(0, 0, w, barHeight);
-  ctx.fillRect(0, h - barHeight, w, barHeight);
+  // Top and bottom 9:16 mobile overlay bars
+  const topBarH = 50;
+  const bottomBarH = 60;
+  ctx.fillStyle = "rgba(0, 0, 0, 0.65)";
+  ctx.fillRect(0, 0, w, topBarH);
+  ctx.fillRect(0, h - bottomBarH, w, bottomBarH);
 
-  // Minimal shot label & live timecode inside lower cinema bar
-  ctx.font = "600 13px Inter, sans-serif";
-  ctx.fillStyle = "rgba(255, 255, 255, 0.78)";
+  // Top header text
+  ctx.font = "700 22px Inter, sans-serif";
+  ctx.fillStyle = "rgba(255, 255, 255, 0.95)";
   ctx.textBaseline = "middle";
   ctx.textAlign = "left";
-  ctx.fillText(current.label.toUpperCase(), 24, h - barHeight / 2);
+  ctx.fillText(project.title.toUpperCase(), 28, topBarH / 2);
+
+  ctx.textAlign = "right";
+  ctx.font = "600 18px Inter, sans-serif";
+  ctx.fillStyle = "#a855f7";
+  ctx.fillText("9:16 60FPS", w - 28, topBarH / 2);
+
+  // Bottom caption & live frame timecode
+  ctx.font = "600 20px Inter, sans-serif";
+  ctx.fillStyle = "rgba(255, 255, 255, 0.85)";
+  ctx.textAlign = "left";
+  ctx.fillText(current.label.toUpperCase(), 28, h - bottomBarH / 2);
 
   const currentSec = playerState.progress * project.durationSeconds;
-  const frameNum = Math.floor((currentSec % 1) * 24);
-  const tcText = `${formatSeconds(currentSec)}:${String(frameNum).padStart(2, "0")} · 24 FPS`;
+  const frameNum = Math.floor((currentSec % 1) * 60);
+  const tcText = `${formatSeconds(currentSec)}:${String(frameNum).padStart(2, "0")}`;
   ctx.textAlign = "right";
-  ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
-  ctx.fillText(tcText, w - 24, h - barHeight / 2);
+  ctx.font = "600 20px Inter, sans-serif";
+  ctx.fillStyle = "rgba(255, 255, 255, 0.95)";
+  ctx.fillText(tcText, w - 28, h - bottomBarH / 2);
 }
 
 function syncPlayerUI() {
@@ -396,8 +428,8 @@ function tickPlayer(timestamp) {
   const dt = (timestamp - playerState.lastFrameTime) / 1000;
   playerState.lastFrameTime = timestamp;
 
-  // Preview playback runs at realistic 1x pacing (capped for crisp demo feel)
-  const previewCycleSeconds = Math.min(24, playerState.project.durationSeconds);
+  // Vertical preview speed
+  const previewCycleSeconds = Math.min(18, playerState.project.durationSeconds);
   playerState.progress += dt / previewCycleSeconds;
 
   if (playerState.progress >= 1) {
@@ -479,7 +511,6 @@ function openProjectModal(projectId) {
     modal.classList.add("is-open");
   });
 
-  // Auto-play the preview reel smoothly on open
   if (!project.videoUrl) {
     startPlayback();
   }
@@ -584,47 +615,6 @@ document.querySelectorAll(".copy-discord-trigger").forEach((btn) => {
 });
 
 // ============================================================================
-// Contact Form Handling
-// ============================================================================
-
-const contactForm = document.getElementById("contact-form");
-const formFeedback = document.getElementById("form-feedback");
-
-contactForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const name = document.getElementById("client-name").value.trim();
-  const contact = document.getElementById("client-contact").value.trim();
-  const type = document.getElementById("project-type").value;
-  const brief = document.getElementById("project-brief").value.trim();
-
-  if (!name || !contact || !brief) {
-    formFeedback.textContent = "Please complete your name, contact handle, and brief.";
-    formFeedback.className = "form-feedback is-error";
-    return;
-  }
-
-  const formattedBrief = [
-    `Project Inquiry for Rayz (Discord: rayz_69)`,
-    `Name: ${name}`,
-    `Contact: ${contact}`,
-    `Project Type: ${type}`,
-    `Brief: ${brief}`,
-  ].join("\n");
-
-  try {
-    await navigator.clipboard.writeText(formattedBrief);
-    formFeedback.textContent =
-      "Brief formatted and copied to your clipboard. Message rayz_69 on Discord and paste to start.";
-  } catch {
-    formFeedback.textContent =
-      "Brief ready. Reach out directly to rayz_69 on Discord with your project summary.";
-  }
-
-  formFeedback.className = "form-feedback is-success";
-  contactForm.reset();
-});
-
-// ============================================================================
 // Mobile Navigation Drawer
 // ============================================================================
 
@@ -646,5 +636,5 @@ if (mobileMenuBtn && mobileNav) {
   });
 }
 
-// Initial portfolio render
-renderProjects("all");
+// Initial portfolio render: 8 9:16 vertical video previews
+renderProjects();
