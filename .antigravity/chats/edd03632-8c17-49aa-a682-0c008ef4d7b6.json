@@ -28,6 +28,18 @@
       "created_at": "2026-11-25T02:38:29.225Z",
       "sender": "macOS",
       "is_cancelled": false
+    },
+    {
+      "id": "8a5c3397-20bc-440c-8076-c543af10142f",
+      "role": "user",
+      "content": "nice , remove the select work option as I just edit gaming videos and in tools section , in first box write \"Mobile Editor\" on 2nd type \"After Motion Z\" On third box type \"Gold Motion\" and on fourth box type \"Gaming Editor\" and then remove all remaining boxes , add 8 video previews boxes on ratio \"9:16\" and remove the order section at the last.",
+      "status": "pending",
+      "model": "gemini-3.8-flash-high",
+      "client_type": "gemini-bridge",
+      "parent_message_id": null,
+      "created_at": "2026-11-25T02:53:19.927Z",
+      "sender": "ios",
+      "is_cancelled": false
     }
   ]
 }
