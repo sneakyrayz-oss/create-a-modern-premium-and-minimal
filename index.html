@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rayz — Video Editor &amp; Visual Storyteller</title>
+  <meta
+    name="description"
+    content="Portfolio of Rayz, a video editor specializing in commercial cuts, documentary pacing, music visuals, and retention-driven storytelling."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Rayz Video Editor Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">RAYZ</span>
+        <span class="brand-role">Video Editor</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+      </nav>
+
+      <button
+        class="mobile-menu-btn"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <div class="container mobile-nav-inner">
+        <a href="#work" class="mobile-nav-link">Work</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <a href="#contact" class="btn btn-primary mobile-nav-cta">Start a Project</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section">
+      <div class="container">
+        <div class="hero-copy" data-reveal>
+          <div class="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for Select Client Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Precision video editing shaped around story, rhythm, and restraint.
+          </h1>
+
+          <p class="hero-subtitle">
+            I am Rayz, an independent video editor crafting commercial films,
+            documentary narratives, music visuals, and retention-driven creator
+            cuts for brands and storytellers worldwide.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">Explore Selected Work</a>
+            <button
+              type="button"
+              class="btn btn-secondary copy-discord-trigger"
+              data-discord="rayz_69"
+            >
+              <span class="discord-label">Discord: rayz_69</span>
+              <span class="copy-hint">Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Featured Showreel Frame -->
+        <div class="showreel-wrap" data-reveal data-delay="120">
+          <button
+            type="button"
+            class="showreel-card"
+            data-project-id="showreel-2026"
+            aria-label="Play 2026 Showreel"
+          >
+            <div class="video-frame">
+              <img
+                src="assets/showreel-hero.png"
+                alt="2026 Commercial and Narrative Showreel still frame"
+                class="video-thumb"
+              />
+              <div class="frame-overlay">
+                <div class="play-badge">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M8 5.14v13.72a1 1 0 0 0 1.52.85l11-6.86a1 1 0 0 0 0-1.7l-11-6.86A1 1 0 0 0 8 5.14z" />
+                  </svg>
+                  <span>Play Showreel</span>
+                </div>
+              </div>
+              <div class="frame-timecode">01:34</div>
+            </div>
+
+            <div class="showreel-meta">
+              <div class="showreel-meta-left">
+                <span class="meta-label">Featured Reel</span>
+                <span class="meta-title">2026 Editorial &amp; Commercial Showreel</span>
+              </div>
+              <div class="showreel-meta-right">
+                <span>4K Mastering</span>
+                <span class="meta-sep" aria-hidden="true">/</span>
+                <span>24 FPS</span>
+                <span class="meta-sep" aria-hidden="true">/</span>
+                <span>Cut, Sound &amp; Grade</span>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section portfolio-section" id="work">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <div>
+            <p class="section-eyebrow">Selected Work</p>
+            <h2 class="section-title">Video Editing Portfolio</h2>
+          </div>
+
+          <div class="filter-bar" role="tablist" aria-label="Filter projects by category">
+            <button type="button" class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">
+              All
+            </button>
+            <button type="button" class="filter-btn" data-filter="Commercial" role="tab" aria-selected="false">
+              Commercial
+            </button>
+            <button type="button" class="filter-btn" data-filter="Documentary" role="tab" aria-selected="false">
+              Documentary
+            </button>
+            <button type="button" class="filter-btn" data-filter="Music Video" role="tab" aria-selected="false">
+              Music Video
+            </button>
+            <button type="button" class="filter-btn" data-filter="Brand Film" role="tab" aria-selected="false">
+              Brand Film
+            </button>
+            <button type="button" class="filter-btn" data-filter="Creator" role="tab" aria-selected="false">
+              Creator
+            </button>
+          </div>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Populated dynamically from script.js so cards and modal stay in sync -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-lead" data-reveal>
+            <p class="section-eyebrow">About Me</p>
+            <h2 class="section-title">
+              Every frame earns its place on the timeline.
+            </h2>
+            <p class="about-bio">
+              I partner with creative directors, founders, artists, and digital
+              creators to turn raw footage into deliberate, cohesive films. My
+              approach prioritizes narrative clarity, tactile sound design, and
+              disciplined pacing so viewers stay locked in from the first cut to
+              the final frame.
+            </p>
+            <p class="about-bio">
+              Whether cutting a 30-second product spot or structuring a
+              long-form documentary essay, I handle offline editorial, rhythm
+              refinement, sound mixing, and clean color finishing under one roof.
+            </p>
+          </div>
+
+          <div class="about-details" data-reveal data-delay="100">
+            <div class="detail-group">
+              <h3 class="detail-heading">Core Disciplines</h3>
+              <ul class="detail-list">
+                <li>
+                  <span class="detail-title">Commercial &amp; Product Editorial</span>
+                  <span class="detail-note">Sharp pacing, kinetic rhythm, brand consistency</span>
+                </li>
+                <li>
+                  <span class="detail-title">Documentary &amp; Narrative Cuts</span>
+                  <span class="detail-note">Story assembly, emotional arcs, dialogue sculpting</span>
+                </li>
+                <li>
+                  <span class="detail-title">Creator &amp; Retention Storytelling</span>
+                  <span class="detail-note">High-retention structure, clean motion graphics</span>
+                </li>
+                <li>
+                  <span class="detail-title">Sound Design &amp; Color Finishing</span>
+                  <span class="detail-note">Foley layering, loudness mastering, Rec.709 grading</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="detail-group">
+              <h3 class="detail-heading">Workflow &amp; Tools</h3>
+              <div class="tools-grid">
+                <span class="tool-item">DaVinci Resolve Studio</span>
+                <span class="tool-item">Adobe Premiere Pro</span>
+                <span class="tool-item">After Effects</span>
+                <span class="tool-item">Frame.io Review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info" data-reveal>
+            <p class="section-eyebrow">Contact</p>
+            <h2 class="section-title">Let us cut something memorable.</h2>
+            <p class="contact-lead">
+              Have raw footage ready, a campaign brief, or an ongoing channel
+              that needs a dedicated editor? Reach out directly on Discord or
+              send your project details below.
+            </p>
+
+            <div class="discord-card">
+              <div class="discord-card-top">
+                <span class="discord-tag">Preferred Direct Contact</span>
+                <span class="discord-status">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  Fastest Response
+                </span>
+              </div>
+
+              <div class="discord-handle-row">
+                <div>
+                  <span class="discord-caption">Discord ID</span>
+                  <p class="discord-id">rayz_69</p>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-primary copy-discord-trigger"
+                  data-discord="rayz_69"
+                >
+                  Copy Discord ID
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-meta-list">
+              <div class="contact-meta-row">
+                <span class="meta-key">Turnaround</span>
+                <span class="meta-val">48–72 hours for standard cuts</span>
+              </div>
+              <div class="contact-meta-row">
+                <span class="meta-key">Availability</span>
+                <span class="meta-val">Project-based &amp; monthly retainers</span>
+              </div>
+              <div class="contact-meta-row">
+                <span class="meta-key">Delivery</span>
+                <span class="meta-val">4K Master + Social Aspect Ratios</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap" data-reveal data-delay="120">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <label for="client-name" class="form-label">Name</label>
+                <input
+                  id="client-name"
+                  name="name"
+                  type="text"
+                  class="form-input"
+                  placeholder="Your name or studio"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="client-contact" class="form-label">Discord or Email</label>
+                <input
+                  id="client-contact"
+                  name="contact"
+                  type="text"
+                  class="form-input"
+                  placeholder="username or name@company.com"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="project-type" class="form-label">Project Type</label>
+                <select id="project-type" name="type" class="form-input">
+                  <option value="Commercial / Brand Film">Commercial / Brand Film</option>
+                  <option value="YouTube / Creator Edit">YouTube / Creator Edit</option>
+                  <option value="Documentary / Narrative">Documentary / Narrative</option>
+                  <option value="Music Video">Music Video</option>
+                  <option value="Monthly Retainer">Monthly Retainer</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="project-brief" class="form-label">Project Brief</label>
+                <textarea
+                  id="project-brief"
+                  name="brief"
+                  rows="4"
+                  class="form-input form-textarea"
+                  placeholder="Share footage status, target runtime, references, and timeline..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-full">
+                  Prepare Project Brief
+                </button>
+                <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="brand-name">RAYZ</span>
+        <span class="footer-copy">Video Editor · Portfolio</span>
+      </div>
+      <div class="footer-right">
+        <span class="footer-discord">Discord: <strong>rayz_69</strong></span>
+        <a href="#top" class="footer-top-link">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Video Screening Modal -->
+  <div
+    class="modal-backdrop"
+    id="screening-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-project-title"
+    hidden
+  >
+    <div class="modal-shell">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-category" id="modal-project-category">Commercial</span>
+          <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+        </div>
+        <button
+          type="button"
+          class="modal-close-btn"
+          id="modal-close"
+          aria-label="Close video player"
+        >
+          Close
+        </button>
+      </div>
+
+      <div class="player-stage">
+        <canvas
+          id="reel-canvas"
+          class="player-canvas"
+          width="1280"
+          height="720"
+          aria-label="Video preview player"
+        ></canvas>
+        <video id="native-video" class="player-video" playsinline controls hidden></video>
+
+        <button
+          type="button"
+          class="stage-play-overlay"
+          id="stage-play-overlay"
+          aria-label="Play or pause preview"
+        >
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M8 5.14v13.72a1 1 0 0 0 1.52.85l11-6.86a1 1 0 0 0 0-1.7l-11-6.86A1 1 0 0 0 8 5.14z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="player-controls" id="custom-player-controls">
+        <button type="button" class="btn btn-primary btn-sm" id="player-toggle-btn">
+          Play
+        </button>
+
+        <div class="timeline-wrap">
+          <input
+            type="range"
+            id="timeline-scrubber"
+            class="timeline-scrubber"
+            min="0"
+            max="1000"
+            value="0"
+            aria-label="Seek video timeline"
+          />
+          <div class="timeline-markers" id="timeline-markers" aria-hidden="true"></div>
+        </div>
+
+        <div class="player-timecode" id="player-timecode">00:00 / 00:48</div>
+      </div>
+
+      <div class="modal-details">
+        <p class="modal-description" id="modal-project-desc"></p>
+        <div class="modal-specs" id="modal-project-specs"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
